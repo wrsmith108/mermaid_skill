@@ -1,14 +1,33 @@
 # mermaid-diagrams
 
-A private, project-scoped Claude Code skill that makes Claude **always use mermaid** for structural diagrams and **never emit ASCII art**.
+A Claude Code skill that makes Claude **always use mermaid** for structural diagrams and **never emit ASCII art**.
+
+Author: Ryan Smith
 
 ## Why this exists
 
-The developer of this project renders mermaid fenced code blocks inline via a VS Code extension. ASCII box-drawing diagrams look worse and don't add anything the rendered mermaid doesn't. This skill tells Claude to reach for mermaid by default.
+Many developers render mermaid fenced code blocks inline (e.g. via a VS Code extension, GitHub, or Obsidian). ASCII box-drawing diagrams look worse in those environments and don't add anything the rendered mermaid doesn't. This skill tells Claude to reach for mermaid by default.
 
 ## Installation
 
-This skill is project-scoped and lives inside the repo at `.claude/skills/mermaid-diagrams/`. No install step — the Claude Code harness auto-discovers skills under `.claude/skills/` when a session starts.
+### User-level (active in every Claude session)
+
+Copy the skill directory into your user skills folder:
+
+```bash
+cp -r mermaid-diagrams ~/.claude/skills/
+```
+
+### Project-level (active only in one repo)
+
+Copy it into the project's `.claude/skills/`:
+
+```bash
+mkdir -p .claude/skills
+cp -r mermaid-diagrams .claude/skills/
+```
+
+Either way, the Claude Code harness auto-discovers skills at session start — no further setup.
 
 ## Triggers
 
@@ -41,6 +60,6 @@ File and directory tree listings (`tree`-style output and proposed layouts) are 
 
 ## Scope
 
-- **Project-level** — only active in this repository
-- **Private** — not published to any skill registry
+- **Public** — shareable and installable by others
+- **Authored in-repo** at `.claude/skills/mermaid-diagrams/`
 - **No hooks** — purely advisory, steers Claude's output via instructions

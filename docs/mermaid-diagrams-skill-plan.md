@@ -8,8 +8,9 @@ Build this as a **skill** (SKILL.md). Skills are model-readable, compose with ot
 
 ## Decisions
 
-- **Scope:** project-level — installed at `.claude/skills/mermaid-diagrams/` inside this repo.
-- **Distribution:** private skill, not published.
+- **Location:** authored at `.claude/skills/mermaid-diagrams/` inside this repo. Stays in-repo; not moved to `~/.claude/skills/`.
+- **Distribution:** public — shareable, installable by others via user-level or project-level copy.
+- **Author:** Ryan Smith.
 - **File-tree exception:** allowed. `tree`-style ASCII directory listings are fine since mermaid doesn't render them well. Everything else structural must be mermaid.
 
 ## Proposed skill structure

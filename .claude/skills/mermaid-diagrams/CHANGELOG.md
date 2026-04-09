@@ -5,6 +5,17 @@ All notable changes to the `mermaid-diagrams` skill will be documented in this f
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-04-09
+
+### Added
+- `author: Ryan Smith` in `SKILL.md` frontmatter.
+- `tags: [mermaid, diagrams, visualization, documentation]` in `SKILL.md` frontmatter for registry searchability.
+- User-level and project-level installation instructions in `README.md`.
+
+### Changed
+- Distribution from private to public.
+- `README.md` scope section updated to reflect public distribution.
+
 ## [1.0.0] - 2026-04-09
 
 ### Added
