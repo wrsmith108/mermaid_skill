@@ -1,7 +1,7 @@
 ---
 name: mermaid-diagrams
 description: This skill should be used when the user asks for a "diagram", "flowchart", "architecture diagram", "sequence diagram", "state machine", "ER diagram", "class diagram", "gantt chart", or asks to "draw", "visualize", "show the flow", or "show the structure" of something. Ensures Claude emits mermaid fenced code blocks instead of ASCII art.
-version: 1.1.0
+version: 1.1.1
 author: Ryan Smith
 tags: [mermaid, diagrams, visualization, documentation]
 ---

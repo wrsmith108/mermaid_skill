@@ -1,7 +1,7 @@
 {
   "name": "mermaid-diagrams",
-  "version": "1.1.0",
-  "checksum": "49e58931ea8cf2a932c8009445de2b0a1772bb517591223f9c98c435fc287b6d",
-  "publishedAt": "2026-04-09T20:07:26.121Z",
+  "version": "1.1.1",
+  "checksum": "02f4c566b621fd658bf8e03eecd2481933616303d908b0787c0679130bda53df",
+  "publishedAt": "2026-04-09T20:42:24.198Z",
   "trustTier": "community"
 }

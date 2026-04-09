@@ -10,21 +10,37 @@ Many developers render mermaid fenced code blocks inline (e.g. via a VS Code ext
 
 ## Installation
 
-### User-level (active in every Claude session)
+Source: https://github.com/wrsmith108/mermaid_skill
 
-Copy the skill directory into your user skills folder:
+### From GitHub (recommended)
+
+Clone the repo and copy the skill into place.
+
+User-level (active in every Claude session):
 
 ```bash
-cp -r mermaid-diagrams ~/.claude/skills/
+git clone https://github.com/wrsmith108/mermaid_skill
+cp -r mermaid_skill/.claude/skills/mermaid-diagrams ~/.claude/skills/
 ```
 
-### Project-level (active only in one repo)
-
-Copy it into the project's `.claude/skills/`:
+Project-level (active only in one repo):
 
 ```bash
+git clone https://github.com/wrsmith108/mermaid_skill
 mkdir -p .claude/skills
-cp -r mermaid-diagrams .claude/skills/
+cp -r mermaid_skill/.claude/skills/mermaid-diagrams .claude/skills/
+```
+
+### From a local copy
+
+If you already have the `mermaid-diagrams` directory on disk:
+
+```bash
+# User-level
+cp -r mermaid-diagrams ~/.claude/skills/
+
+# Project-level
+mkdir -p .claude/skills && cp -r mermaid-diagrams .claude/skills/
 ```
 
 Either way, the Claude Code harness auto-discovers skills at session start — no further setup.
